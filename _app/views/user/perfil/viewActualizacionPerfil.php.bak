@@ -1,0 +1,45 @@
+<div class="main" >
+	<div class="main-inner">
+		<div class="perfil-container">
+			<div class="widget perfil-widget">
+				<div class="widget-header"> 
+					<i class="icon-user"></i>
+					<h3>Perfil</h3>																
+				</div> <!-- /widget-header -->
+				<div class="widget-content">
+					<? if(isset($ok)) : ?>
+						<p class="alert alert-success"><?=$ok; ?></p>
+					<? endif; ?>
+
+					<? if(isset($error)) : ?>
+						<p class="alert alert-danger"><?=$error; ?></p>
+					<? endif; ?>
+
+					<? 
+					if(isset($img)) 
+					{
+						$url = $img;
+					} else {
+						$url = '../assets/img/perfil.jpg';
+					}
+
+					?>
+
+					<div class="avatar" style="background-image: url(<?=$url; ?>)"></div>
+					
+					<hr />
+					<form action="<?=base_url("user/uploadImage"); ?>" method="post" enctype="multipart/form-data" style="padding-top: 0.5rem">
+						<p>Cambiar imagen de perfil:</p>
+						
+						<div style="width: 75%; float: left;">
+							<input type="file" name="fileToUpload" id="fileToUpload">
+							<br /><i>Puede ser formato JPG o PNG.</i>
+						</div>
+						<input type="submit" value="Subir imagen" name="submit" style="float: right">
+						
+					</form>
+				</div>			
+			</div>
+		</div>
+	</div>
+</div>

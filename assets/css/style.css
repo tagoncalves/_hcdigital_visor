@@ -1,0 +1,173 @@
+html{
+	min-width: 320px;
+}
+
+.sitio {
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+}
+
+.sitio-main {
+	/*margin-bottom: 15px;*/
+	flex: 1 0 auto;	
+}
+
+.derecha{
+	float: right;
+}
+
+.Site-header{
+	flex-shrink: 0;
+	margin-bottom: 20px;
+}
+
+.Site-footer {
+	flex-shrink: 0; /* 2 */
+}
+
+.account-container{
+	margin-bottom: 60px;
+}
+
+#myModalPDF {
+    /* new custom width */
+    width: 750px;
+    /* must be half of the width, minus scrollbar on the left (30px) */
+    margin-left: -375px;
+}
+
+#visorAnt .widget-content object {
+	height: calc(90vh - 150px);
+}
+
+#btn-cerrar-antecedente{
+	float: right;
+    margin: 10px 10px 0 0;
+}
+
+#btn-cerrar-antecedente span {
+	margin: 0;
+}
+
+#contResPaciente{
+	max-height: 141px;
+	overflow-y: scroll;
+}
+
+#visorAnt{
+	opacity: 1 !important;
+}
+
+#paciente-nombre{
+	text-transform: uppercase;
+}
+
+#resPaciente tbody{
+	cursor:pointer;
+} 
+
+.iconPendiente{
+	color: #BB0000;
+}
+
+.iconParcial{
+	color: #BBB800;
+}
+
+.iconFinal{
+	color: #00ba8b;
+}
+
+.icono{
+	font-size: 10px;
+}
+
+.icono-xl{
+	font-size: 13px;
+}
+
+.resultadoMicro{
+	padding: 10px;
+	font-size: 14px;
+}
+
+.modal-body{
+	/* 100% = dialog height, 120px = header + footer */
+    max-height: calc(100% - 120px);
+	height:calc(100vh - 60px);
+	overflow-y:scroll;
+	max-height:50vh;
+}
+
+.visorInformes{
+	padding: 5px;
+	font-size: 14px;
+	/*padding: 15px;
+	font-size: 14px;
+	line-height: 1.4;*/
+}
+
+.pacColorOk{color:#00BA8B;} 
+.pacColorNo{color:#888;}
+.pacColorPend{color:#FF7F74;} 
+.pacColorEsp{color:#CC81EF;} 
+.pacColorST{color:#EFE823;} 
+
+#frReferencias .widget-content .form-inline{margin: 5px 10px;}
+#frReferencias {top: 15px; margin-bottom: 15px;}
+
+.setOverflow{
+	overflow:auto;
+}
+
+.toolbar{
+	margin-bottom: 10px;
+}
+
+.centerD{
+	display: table;
+	margin: 0 auto;
+}
+
+.listadoMd{
+	max-height: 420px;
+	overflow-y: scroll;
+	height: 100%;
+}
+
+#form-plantillas select{
+	margin-bottom: 9px!important;
+}
+
+/* PERFIL */ 
+div.avatarmin {
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    float: left;
+	margin-top: 6px;
+}
+
+#form-evolucionenf textarea{
+	text-transform: uppercase;
+}
+
+.icon-telemedicina {
+	color: #212F3C;
+	margin-left: 5px;
+}
+
+.frame-telemedicina {
+	background-color: #FCF8E3;
+	padding: 5px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.control-group {
+	margin-bottom: 0px;
+}
