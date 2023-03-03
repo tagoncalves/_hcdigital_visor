@@ -9,7 +9,7 @@ class User extends CI_Controller {
 	}
 	
 	public function index() {
-		redirect('/');
+		redirect('/agenda/consultaHC');
 	}
 	
 	public function testSession(){

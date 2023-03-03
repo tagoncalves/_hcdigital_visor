@@ -21,12 +21,6 @@ class Agenda extends CI_Controller
 	{
 		if ($this->session->userdata('login') == null) {
 			redirect('user/login');
-		// } elseif ($this->session->userdata('login') == 2) {
-		// 	redirect('user/cambiarServicio');
-		// } elseif ($this->session->userdata('consul') == "-") {
-		// 	redirect('user/cambiarConsul');
-		// } elseif ($this->session->userdata('oficina') == "-") {
-		// 	redirect('user/cambiarConsul');
 		} else {
 			redirect('agenda/consultaHC');
 			$data['page'] = 'consultahc';
